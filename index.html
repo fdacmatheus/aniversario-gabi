@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aniversário Gabi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -11,7 +14,7 @@
             flex-direction: column;
             background-color: #ffe6f2; /* Cor de fundo rosa claro */
             color: #ff66b2; /* Cor do texto rosa mais escuro */
-            font-family: 'Arial', sans-serif;
+            font-family: 'Syne', sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
@@ -108,13 +111,44 @@
             justify-content: center;
             align-items: center;
         }
+        #section1 img {
+            display: block;
+            max-width: 100%;
+            width: 400px;
+            align-self: center;
+            margin-top: 20px;
 
+        }
+        .div-img {
+            display: flex;
+            justify-content: center;
+            padding: 32px;
+            vertical-align: middle;
+        }
+        @media screen and (max-width: 600px) {
+            #section1 img {
+            display: block;
+            max-width: 100%;
+            width: 400px;
+
+        }
+        .titulo {
+            font-size: 30px !important;
+        }
+        }
     </style>
 </head>
 <body>
 
 <!-- Seção 1: Botão de Iniciar -->
 <section id="section1">
+
+    <div class="div-img">
+        <img src="./gabi-tour.jpg" alt="">
+    </div>
+    <div>
+        <h1 class="titulo" style="color: black; font-size: 28px;">The Gabriela Tour</h1>
+    </div>
     <button onclick="iniciarMusica()"> <svg fill="#fff" height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
         viewBox="0 0 52.821 52.821" xml:space="preserve">
    <g>
